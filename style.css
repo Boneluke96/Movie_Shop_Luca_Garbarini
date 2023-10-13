@@ -191,6 +191,13 @@ h1, h2, h3, h4, h5, h6{
     height: 300px;
 }
 
+@media only screen and (max-width: 415px){
+    .swiper {
+        width: 350px;
+        height: 300px;
+    }
+}
+
 .review-card{
     height: 300px;
     width: 200px;
@@ -202,6 +209,13 @@ h1, h2, h3, h4, h5, h6{
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
+}
+
+@media only screen and (max-width: 415px){
+    .review-card {
+        height: 300px;
+        width: 150px; 
+    }
 }
 
 .swiper-button-prev{
