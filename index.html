@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>shop 01</title>
+    <!-- bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;500;600;700&family=Electrolize&family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- swpier CSS -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <!-- link CSS -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <!-- navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-custom fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img id="logo" class="logo-custom" src="./media/movie-white.png" alt="demoshop">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-1 mb-2 mb-lg-0 mx-auto">
+            <li class="nav-item">
+              <a class="nav-link tx-white" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link tx-white" href="./annunci.html">Shop</a>
+            </li>
+          </ul>
+          <!-- <div class="d-flex">
+            <a class="nav-link tx-white me-3" href="">
+              <i class="fa-solid fa-magnifying-glass"></i></a>
+            <a class="nav-link tx-white" href="">
+              <i class="fa-solid fa-user-plus"></i>
+            </a>
+          </div> -->
+        </div>
+      </div>
+    </nav>
+
+    <!-- header -->
+    <header class="container-fluid header-custom">
+      <div class="row h-100 align-items-center">
+        <div class="col-12 text-center">
+          <h1 class="tx-gradient fw-bolder">MOVIE SHOP</h1>
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-4 mt-3">
+              <i class="fa-solid fa-film fs-3 icon-section"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main>
+      <!-- text box -->
+      <section class="container my-5 py-5">
+        <div class="row">
+          <div data-aos="fade-right" class="text-box col-12 col-md-6 d-flex flex-column align-items-center bg-brown py-3 rounded-4">
+            <h2 class="tx-white">TITLE</h2>
+            <p class="tx-white lead mt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae expedita unde dolor odio, itaque deleniti velit laudantium, distinctio natus vero totam, fuga ab quam saepe dicta doloremque aliquam. Odit, nisi.</p>
+          </div>
+          <div data-aos="fade-left" class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+            <img src="./media/film.jpg" alt="img" class="img-film">
+          </div>
+        </div>
+      </section>
+
+      <!-- titolo 2 e button -->
+      <section class="container-fluid exploreShop d-flex align-items-center justify-content-center">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h3 class="mid-title">Explore our shop</h3>
+          </div>        
+            <div class="col-12 d-flex justify-content-center mt-3">
+              <a href="./annunci.html" class="btn btn-shop">Shop</a>
+            </div>
+        </div>
+      </section>
+
+      <!-- numeri incrementali -->
+      <section class="container py-5 my-5">
+        <div class="row">
+          <div data-aos="fade-up" class="col-12 col-md-12 col-lg-6 d-flex justify-content-center">
+            <img src="./media/film2.jpg" alt="img" class="img-film">
+          </div>
+          <div class="col-12 col-md-12 col-lg-6 mt-2">
+            <h3 class="tx-brown text-center">Our Numbers</h3>
+            <p class="lead text-start"><span id="primoNumero" class="number pe-1">0</span> satisfied customers</p>
+            <p class="lead text-center"><span id="secondoNumero" class="number pe-1">0</span> sold items</p>
+            <p class="lead text-end"><span id="terzoNumero" class="number pe-1">0</span> partner companies</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- recensioni swiper -->
+      <section class="container my-5 py-5">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-12">
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div id="swiperWrapper" class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <!-- <div class="review-card">
+                    <p class="h3">Pietro</p>
+                    <p class="lead">Primo acquisto con loro, ne farò altri!</p>
+                  </div> -->
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- fake form -->
+      <section class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6">
+              <div class="mb-3">
+                <label for="userName" class="form-label">Insert your name</label>
+                <input type="text" class="form-control" id="userName">
+              </div>
+              <div class="mb-3">
+                <label for="userDescription" class="form-label">Insert review</label>
+                <input type="text" class="form-control" id="userDescription">
+              </div>
+              <button id="addReviewBtn" class="btn btn-review mt-3">Submit</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <hr>
+    </footer>
+
+
+
+    <!-- AOS script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/75c6350e1a.js" crossorigin="anonymous"></script>
+    <!-- script bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- script JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
