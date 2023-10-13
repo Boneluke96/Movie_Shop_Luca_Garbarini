@@ -100,6 +100,12 @@ h1, h2, h3, h4, h5, h6{
     border-radius: 10%;
 }
 
+@media only screen and (max-width: 415px){
+    .img-film{
+        margin-top: 100px;
+    }
+}
+
 /* sezione 2 */
 .exploreShop{
     height: 50vh;
@@ -179,10 +185,17 @@ h1, h2, h3, h4, h5, h6{
 }
 /* fine button */
 
+/* section 3 */
 .number{
     font-size: 50px;
     color: var(--colorSecondary);
     font-weight: 900;
+}
+
+@media only screen and (max-width: 415px){
+    .number-tx{
+        margin-top: 100px;
+    }
 }
 
 /* swiper */
@@ -214,7 +227,7 @@ h1, h2, h3, h4, h5, h6{
 @media only screen and (max-width: 415px){
     .review-card {
         height: 300px;
-        width: 150px; 
+        width: 150px;
     }
 }
 
