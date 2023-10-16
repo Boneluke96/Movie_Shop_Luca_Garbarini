@@ -35,6 +35,13 @@ h1, h2, h3, h4, h5, h6{
     transition: all 0.3s ease;
 }
 
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus{
+    outline: none;
+    box-shadow: none;
+}
+
 .logo-custom{
     height: 50px;
     width: 50px;
@@ -98,6 +105,12 @@ h1, h2, h3, h4, h5, h6{
 .img-film{
     height: 300px;
     border-radius: 10%;
+}
+
+@media only screen and (max-width: 415px){
+    .img-film{
+        margin-top: 100px;
+    }
 }
 
 /* sezione 2 */
@@ -179,10 +192,17 @@ h1, h2, h3, h4, h5, h6{
 }
 /* fine button */
 
+/* section 3 */
 .number{
     font-size: 50px;
     color: var(--colorSecondary);
     font-weight: 900;
+}
+
+@media only screen and (max-width: 415px){
+    .number-tx{
+        margin-top: 100px;
+    }
 }
 
 /* swiper */
@@ -214,7 +234,7 @@ h1, h2, h3, h4, h5, h6{
 @media only screen and (max-width: 415px){
     .review-card {
         height: 300px;
-        width: 150px; 
+        width: 150px;
     }
 }
 
@@ -225,6 +245,16 @@ h1, h2, h3, h4, h5, h6{
 .swiper-button-next{
     color: var(--colorSecondary);
 }
+
+/* review input form */
+.input-review:focus, .input-name:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+
+/* ========================= SHOP ================================ */
+
 
 /* filter announces */
 .accordion-button, .accordion-body{
@@ -242,7 +272,7 @@ h1, h2, h3, h4, h5, h6{
     box-shadow: none;
 }
 
-/* input range */
+/*price input range */
 input[type=range]{
     -webkit-appearance: none;
 }

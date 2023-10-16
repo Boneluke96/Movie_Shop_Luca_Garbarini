@@ -3,6 +3,7 @@ let navbar = document.querySelector("#navbar");
 let links = document.querySelectorAll('.nav-link');
 let logo = document.querySelector("#logo");
 
+//navbar scambio colori allo scroll
 window.addEventListener('scroll', () => {
     let scrolled = window.scrollY;
     
@@ -90,11 +91,12 @@ function generateCard(){
     reviews.forEach((review) => {
         let div = document.createElement('div');
         div.classList.add("swiper-slide");
-        div.innerHTML = 
-        `<div class="review-card">
+        div.innerHTML = `
+        <div class="review-card">
         <p class="h3">${review.name}</p>
         <p class="lead">${review.description}</p>
-        </div>`
+        </div>
+        `
         swiperWrapper.appendChild(div);
     });
 }

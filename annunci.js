@@ -1,3 +1,42 @@
+//catture elementi
+let navbar = document.querySelector("#navbar");
+let links = document.querySelectorAll('.nav-link');
+let logo = document.querySelector("#logo");
+
+//navbar scambio colori allo scroll
+window.addEventListener('scroll', () => {
+    let scrolled = window.scrollY;
+    
+    if(scrolled > 0){
+        changeNavbar("navbar-blur", "movie-red", "var(--colorThird)");
+    }else{
+        navbar.classList.remove('navbar-blur');
+        changeNavbar("navbar-custom", "movie-white", "var(--colorPrimary)",);
+    }
+});
+
+function changeNavbar(background, imgLogo, color1, color3){
+    navbar.classList.add(background);
+    
+    logo.src = `http://127.0.0.1:5500/media/${imgLogo}.png`;
+    
+    links.forEach((link) => {
+        link.style.color = color1;
+    });
+    
+    logo.src = `http://127.0.0.1:5500/media/${imgLogo}.png`;
+    
+    links.forEach((link) => {
+        link.style.color = color3;
+    });
+}
+
+
+
+
+
+
+//filtro globale
 let genresWrapper = document.querySelector('#genresWrapper');
 let cardsWrapper = document.querySelector('#cardsWrapper');
 let priceInput = document.querySelector('#priceInput');
