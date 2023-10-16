@@ -199,7 +199,7 @@ h1, h2, h3, h4, h5, h6{
     font-weight: 900;
 }
 
-@media only screen and (max-width: 415px){
+@media only screen and (max-width: 540px){
     .number-tx{
         margin-top: 100px;
     }
@@ -211,9 +211,16 @@ h1, h2, h3, h4, h5, h6{
     height: 300px;
 }
 
-@media only screen and (max-width: 415px){
+@media only screen and (max-width: 540px){
     .swiper {
         width: 350px;
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 280px){
+    .swiper {
+        width: 250px;
         height: 300px;
     }
 }
@@ -231,10 +238,18 @@ h1, h2, h3, h4, h5, h6{
     text-align: center;
 }
 
-@media only screen and (max-width: 415px){
+@media only screen and (max-width: 540px){
     .review-card {
         height: 300px;
-        width: 150px;
+        width: 280px;
+        margin-left: 35px;
+    }
+}
+
+@media only screen and (max-width: 280px){
+    .review-card {
+        height: 300px;
+        width: 180px;
     }
 }
 

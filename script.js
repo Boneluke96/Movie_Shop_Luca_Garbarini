@@ -113,7 +113,7 @@ const swiper = new Swiper('.swiper', {
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
-    slidesPerView: 3,
+    slidesPerView: 'auto',
     coverflowEffect: {
     rotate: 50,
     stretch: 0,
@@ -133,3 +133,20 @@ const swiper = new Swiper('.swiper', {
       prevEl: '.swiper-button-prev',
     },
 });
+
+// Funzione per aggiornare il numero di "review-card" in base alle dimensioni dello schermo
+function updateSlidesPerView(){
+    if(window.innerWidth < 541){
+      // Mostra una sola "review-card" su dispositivi mobili
+      swiper.params.slidesPerView = 1;
+    }else{
+      // Mostra tre "review-card" su desktop
+      swiper.params.slidesPerView = 3;
+    }
+  
+    swiper.update(); // Aggiorna lo swiper per riflettere le modifiche
+  }
+  
+  // Inizializza il controllo al caricamento della pagina e al ridimensionamento
+  window.addEventListener('load', updateSlidesPerView);
+  window.addEventListener('resize', updateSlidesPerView);
