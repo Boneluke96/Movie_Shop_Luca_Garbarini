@@ -18,13 +18,13 @@ window.addEventListener('scroll', () => {
 function changeNavbar(background, imgLogo, color1, color3){
     navbar.classList.add(background);
     
-    logo.src = `http://127.0.0.1:5500/media/${imgLogo}.png`;
+    logo.src = `./media/${imgLogo}.png`;
     
     links.forEach((link) => {
         link.style.color = color1;
     });
     
-    logo.src = `http://127.0.0.1:5500/media/${imgLogo}.png`;
+    logo.src = `./media/${imgLogo}.png`;
     
     links.forEach((link) => {
         link.style.color = color3;
